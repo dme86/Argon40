@@ -42,7 +42,7 @@ fi
 pythonbin=/usr/bin/python3
 
 #  Files
-ARGONDOWNLOADSERVER=https://download.argon40.com
+ARGONDOWNLOADSERVER=https://raw.githubusercontent.com/dme86/Argon40/main
 INSTALLATIONFOLDER=/etc/argon
 basename="argononeups"
 daemonname=$basename"d"
