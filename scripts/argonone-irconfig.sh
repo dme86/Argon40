@@ -296,9 +296,11 @@ fi
 
 if [ "$CHECKGPIOMODE" = "rpigpio" ]
 then
-	sudo wget https://download.argon40.com/argonone-irdecoder.py -O $irdecodefile --quiet
+  sudo wget "$ARGONDOWNLOADSERVER/scripts/argonone-irdecoder.py" \
+    -O "$irdecodefile" --quiet
 else
-	sudo wget https://download.argon40.com/scripts/argonone-irdecoder-libgpiod.py -O $irdecodefile --quiet
+  sudo wget "$ARGONDOWNLOADSERVER/scripts/argonone-irdecoder-libgpiod.py" \
+    -O "$irdecodefile" --quiet
 fi
 
 sudo python3 $irdecodefile $remotemode
