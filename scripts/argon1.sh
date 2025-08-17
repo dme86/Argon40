@@ -715,7 +715,7 @@ then
 	then
 		imagefile=argoneon.png
 	fi
-	sudo wget https://download.argon40.com/$imagefile -O /usr/share/pixmaps/$imagefile --quiet
+	sudo wget https://raw.githubusercontent.com/dme86/Argon40/main/icons/$imagefile -O /usr/share/pixmaps/$imagefile --quiet
 	if [ -f $shortcutfile ]; then
 		sudo rm $shortcutfile
 	fi
